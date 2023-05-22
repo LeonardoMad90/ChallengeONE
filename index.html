@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script src="https://kit.fontawesome.com/3117b56b4e.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Encriptador | Desencriptador</title>
+</head>
+<body>
+	
+  <header>
+    <img src="mesera.png" alt="logoPagina" class="andado">
+    <span class="hashtag"> By LeonardoMadariaga</span>
+  </header>
+  
+  <main id="contenedor">
+    <section id="ingresarTexto">
+			<div class="ingresarTexto-contenido">
+				<textarea placeholder="Ingresa el texto que quieras encriptar o desencriptar"></textarea>
+				<p><i class="fa-solid fa-arrow-right"></i> Por consigna Este programa solo admite caracteres alfabéticos en minúsculas.</p>
+				<div class="mainbttns">
+					<button id="btn-d"><i class="fa-solid fa-unlock"></i> Desencriptar</button>
+					<button id="btn-e"><i class="fa-solid fa-lock"></i> Encriptar</button>
+				</div>
+			</div>
+    </section>
+    
+    <section id="derecha">
+      <img src="midorya.png" alt="" id ="vector" class="vector">
+      
+      <p id="msnTexto" class="msnTexto">¡Hey, mándame un mensaje!</p>
+      
+      <div class="resultadoOculto oculto" id="resultadoOculto">
+        <div class="resultado">
+          <i class="fa-solid fa-dragon fa-animation"></i>
+          <h2>¡Muy bien! Tu mensaje es:</h2>
+          <p class="showResult" id="showResult"></p>
+        </div>
+        <div class="copia">
+          <div class="info">
+            <p><i class="fa-solid fa-arrow-right"></i> Copia el resultado en el campo de texto para desencriptar o ingresa un nuevo texto para encriptar.</p>
+          </div>
+          <div class="boton">
+            <button id="btn-c"><i class="fa-regular fa-clipboard"></i> Copiar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  
+  <div class="toast">
+    <div class="toast-content">
+      <i class="fas fa-solid fa-check check"></i>
+      <div class="message">
+        <span class="text text-1">¡Mensaje Copiado con éxito</span>
+        <span class="text text-2">Ahora podemos continuar.</span>
+      </div>
+    </div>
+    <i class="fa-solid fa-xmark close"></i>
+    <div class="progress"></div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
